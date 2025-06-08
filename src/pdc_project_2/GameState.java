@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pdc_project_2;
 
-/**
- *
- * @author User
- */
-public class GameState {
-    
+//Changes the gamestate
+public enum GameState {
+    WAITING, PLAYER_TURN, DEALER_TURN, ROUND_OVER 
 }

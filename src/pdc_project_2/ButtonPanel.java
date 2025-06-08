@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pdc_project_2;
 
-/**
- *
- * @author User
- */
-public class ButtonPanel {
+import javax.swing.*;
+import java.awt.*;
+
+   //Button panel 
+public class ButtonPanel extends JPanel {
+    //Buttons for hitting, standing, and quitting
+    public JButton hitButton = new JButton("Hit");
+    public JButton standButton = new JButton("Stand");
+    public JButton quitButton = new JButton("Quit");
+
     
+    public ButtonPanel() {
+        setLayout(new FlowLayout());
+        //Adding the buttons
+        add(hitButton);
+        add(standButton);
+        add(quitButton);
+    }
 }

@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pdc_project_2;
 
-/**
- *
- * @author User
- */
-public class HumanPlayer {
+//Subclass of Player
+public class HumanPlayer extends Player {
+    public HumanPlayer(String name, int chips){
+     super(name, chips);   
+    }
     
+    public HumanPlayer(String name, int chips, int wins, int losses){
+        super(name, chips, wins, losses);
+    }
 }

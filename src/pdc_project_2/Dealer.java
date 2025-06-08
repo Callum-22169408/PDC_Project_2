@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pdc_project_2;
 
-/**
- *
- * @author User
- */
-public class Dealer {
+//Subclass of Player for the dealer
+public class Dealer extends Player {
+    public Dealer(){
+        super("Dealer", 0);
+    }
     
+    public void playTurn(Deck deck){
+        while(getHand().getHandValue()<17){
+            getHand().addCard(deck.dealCard());
+        }
+    }
 }

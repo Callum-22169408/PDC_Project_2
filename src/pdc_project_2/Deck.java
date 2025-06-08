@@ -4,11 +4,6 @@ package pdc_project_2;
 import java.util.ArrayList; 
 import java.util.Collections; 
 
-/**
- *
- * @author User
- */
-
 //Forms the deck and shuffles the deck 
 public class Deck {
     private ArrayList<Card> cards; 
@@ -36,10 +31,7 @@ public class Deck {
         return cards.remove(cards.size()-1);
     }
     
-    //
     public int size(){
         return cards.size();
     }
-    
- 
- }
+}

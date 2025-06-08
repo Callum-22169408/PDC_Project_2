@@ -2,13 +2,9 @@ package pdc_project_2;
 
 import java.sql.*; 
 
-/**
- *
- * @author User
- */
 public class PlayerDatabase {
     private Connection conn; 
-    
+
     
     //Connects to the derby database. 
     public PlayerDatabase() throws SQLException {
@@ -59,7 +55,7 @@ public class PlayerDatabase {
         ps.executeUpdate();
     }
     
-     public ResultSet getPlayer(String name) throws SQLException {
+    public ResultSet getPlayer(String name) throws SQLException {
         PreparedStatement ps = conn.prepareStatement(
             "SELECT * FROM Players WHERE name=?");
         ps.setString(1, name);
