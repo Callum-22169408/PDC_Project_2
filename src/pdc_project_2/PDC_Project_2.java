@@ -10,18 +10,8 @@ package pdc_project_2;
  */
 public class PDC_Project_2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("hello!");
-        System.out.println("Testing testing commit ");
-        
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
-            
-        }
+        System.out.println("Main Class");
     }
     
 }

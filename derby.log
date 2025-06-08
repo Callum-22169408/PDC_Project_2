@@ -1,0 +1,20 @@
+Fri Jun 06 14:38:36 NZST 2025 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Fri Jun 06 14:38:36 NZST 2025:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0197-431a-c14c-000071a2249c 
+on database directory C:\Users\User\Documents\NetBeansProjects\PDC_Project_2\Project_2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e 
+Loaded from file:/C:/Users/User/Documents/NetBeansProjects/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=21.0.5+9-LTS-239
+user.dir=C:\Users\User\Documents\NetBeansProjects\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\User\Documents\NetBeansProjects\PDC_Project_2
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Jun 06 16:11:43 NZST 2025: Shutting down Derby engine
+----------------------------------------------------------------
+Fri Jun 06 16:11:43 NZST 2025:
+Shutting down instance a816c00e-0197-431a-c14c-000071a2249c on database directory C:\Users\User\Documents\NetBeansProjects\PDC_Project_2\Project_2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e 
+----------------------------------------------------------------
