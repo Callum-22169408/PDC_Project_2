@@ -1,37 +1,49 @@
 package pdc_project_2;
 
-//imports so I can use these important functions 
-import java.util.ArrayList; 
-import java.util.Collections; 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-//Forms the deck and shuffles the deck 
 public class Deck {
-    private ArrayList<Card> cards; 
+    private List<Card> cards;
 
-    //Constructing the deck with 52 cards
-    public Deck(){
-        cards = new ArrayList<> (); 
-        String[] ranks = {"A", "2","3", "4","5", "6","7", "8","9", "10","J", "Q","K"};
-        String[] suits = {"C", "D", "H", "S"};
-        
+    //Constructor
+    public Deck() {
+        initializeDeck();
+        shuffle();
+    }
+
+    //Initializes the deck with 52 cards
+    private void initializeDeck() {
+        cards = new ArrayList<>();
+        String[] suits = {"H", "D", "C", "S"};
+        String[] ranks = {
+            "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"
+        };
         for (String suit : suits) {
-            for(String rank : ranks){
+            for (String rank : ranks) {
                 cards.add(new Card(rank, suit));
             }
         }
     }
-    
-    // Randomises the order of cards, essential for a fair game 
-    public void shuffleDeck(){
+
+    //Shuffles the deck
+    public void shuffle() {
         Collections.shuffle(cards);
     }
-    
-    //removes the top card off the deck
-    public Card dealCard(){
-        return cards.remove(cards.size()-1);
+
+    //Deals the top card. If deck is empty, reshuffles a new deck first!
+    public Card dealCard() {
+        if (cards.isEmpty()) {
+            // Reinitialize and shuffle the deck if empty to prevent errors
+            initializeDeck();
+            shuffle();
+        }
+        return cards.remove(0);
     }
-    
-    public int size(){
+
+    //Returns the number of cards left in the deck
+    public int size() {
         return cards.size();
     }
 }

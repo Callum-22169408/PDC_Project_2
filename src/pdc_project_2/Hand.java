@@ -11,6 +11,9 @@ public class Hand {
     public Hand() {
         cards = new ArrayList<>();
     }
+     public Hand(List<Card> cards) {
+        this.cards = new ArrayList<>(cards);
+    }
 
     public void addCard(Card card) {
         cards.add(card);
@@ -34,6 +37,7 @@ public class Hand {
         }
         return total;
     }
+    
 
     @Override
     public String toString() {

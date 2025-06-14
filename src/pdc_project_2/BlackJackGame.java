@@ -16,7 +16,7 @@ public class BlackJackGame{
    }
    
    public void startNewRound(){
-       deck.shuffleDeck();
+       deck.shuffle();
        player.resetHand();
        dealer.resetHand();
        player.getHand().addCard(deck.dealCard());

@@ -101,10 +101,11 @@ public class GameController {
         updateGUI(true);
     }
 
+    //Update the GUI including the hand display and the score labels
     private void updateGUI(boolean showDealerFullHand) {
         gui.updateHands(
-            game.getDealer().getHand().getCards(),
-            game.getPlayer().getHand().getCards(),
+            game.getDealer().getHand(),
+            game.getPlayer().getHand(),
             showDealerFullHand
         );
     }
